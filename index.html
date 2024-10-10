@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foto-Feed mit Like & Authentifizierung</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="login-section">
+      <h2>Benutzer-Login</h2>
+      <input type="text" id="username" placeholder="Username" />
+      <input type="password" id="password" placeholder="Password" />
+      <button id="login-btn">Login</button>
+      <p id="login-error" style="color: red;"></p>
+    </div>
+
+    <div id="app-section" style="display: none;">
+      <div id="photo-feed">
+        <!-- Bilder werden hier dynamisch geladen -->
+      </div>
+      <div class="controls">
+        <button id="prev-btn">Vorheriges</button>
+        <button id="next-btn">Nächstes</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
